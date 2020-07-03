@@ -100,7 +100,7 @@ def visualize_animate(img_list):
         plt.axis("off")
         plt.imshow(np.transpose(img,(1,2,0)))
         save_path = os.path.join(curve_dir,'5epoch_image_'+str(i)+'.png')   # save the image per frame from img_list
-        fig.savefig(save_path,bbox_inches='tight',pad_inches=0.0)
+        fig.savefig(save_path,dpi=fig.dpi,bbox_inches='tight',pad_inches=0.0)
         plt.clf()
         plt.close(fig)
 
